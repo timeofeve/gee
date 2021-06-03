@@ -75,6 +75,40 @@ func   (k kelvin) celsius() celsius
      例 planets[0:4] 包含索引0，1，2，3 不包括4
   slice的索引不可以是负数
   切分字符串时，索引代表的是字节数而非 rune数
+  TrimSpace去除字符前后空白字符
+  // Join 将 a 中的子串连接成一个单独的字符串，子串之间用 sep 分隔
+  func Join(a []string, sep string) string
+```
+### append 函数
+```
+append 函数为内置函数，它可以将元素添加到slice里面
+```
+### 长度与容量(length capacity)
+```
+切片的长度是它所包含的元素个数。
+切片的容量是从它的第一个元素到其底层数组元素末尾的个数。
+切片 s 的长度和容量可通过表达式 len(s) 和 cap(s) 来获取。
+```
+### make函数对slice进行预分配
+```
+尽量避免面额外的内存分配和数组复制操作
+//用make()函数来创建切片：var 变量名 = make([]变量类型,长度,容量)
+var s = make([]int, 0, 5)
+```
+### map 集合
+```
+可以将key映射到value
+快速通过key找到对应的value
+key几乎可以是任何类型
 
+    key type value type
+       |      |
+map [string] int
 
+map不会被复制
+```
+### map 用作set
+```
+set集合与数组类似，但元素不会重复
+go中没提供set集合
 ```
