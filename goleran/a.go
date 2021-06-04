@@ -15,5 +15,7 @@ func main() {
 	}
 	for t, num := range f {
 		fmt.Printf("%+.2f dd %d times\n", t, num)
+		fmt.Println(&t)
 	}
 }
+
