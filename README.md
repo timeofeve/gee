@@ -112,3 +112,21 @@ map不会被复制
 set集合与数组类似，但元素不会重复
 go中没提供set集合
 ```
+### struct 结构体
+```
+变量结构体
+var test struct{}
+
+类行结构体,可以复用
+type test struct{}
+```
+### struct 编码为json
+```
+json包中的Marshal函数可以将struct 中的数据转化为JSON格式
+Marshal函数只会对struct中被导出的字段进行编码
+```
+### go中没有class类
+```
+go和其他经典语言不同，没得class，没有对象，也没有继承
+但是go提供struct和方法可以实现对象
+```
